@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/glamping.css">
+</head>
+<body>
+  <header>
+    <ul class="logo">
+        <img src="assets/images/glamping.png" alt="">
+    </ul>
+    <ul class="main__nav-title">
+        <li class="main__nav-title__li">객실보기</li>
+        <li class="main__nav-title__li">예약안내</li>
+        <li class="main__nav-title__li">이용안내</li>
+        <li class="main__nav-title__li">여행지</li>
+        <li class="main__nav-title__li">오시는길</li>
+    </ul>
+</header>
+
+<section class="section_01">
+  <div class="container-fluid">
+    <img src="assets/images/bg.png" alt="">
+    <div class="container">
+      <div class="container_title">
+        <h3>인천 인기 글램핑 찾기</h3>
+        <p>여행 일정을 선택하고 특가를 확인하세요!</p>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <span>국내숙소</span>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/search.png" alt="">
+          <span>인천 광역시</span>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/cal.png" alt="cal">
+              <span>04월29일 -  04월30일 (1박)</span>
+        </div>
+        <div class="col-md-2">
+          <img src="assets/images/user.png" alt="user">
+          <span>인원 2</span>
+        </div>
+        <div class="mian_btn col-md-2">
+          <button>검색</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section02">
+    <div class="container_02">
+      <div class="section02_title">
+        <span class="section02_span1">Gallery</span>
+        <span class="section02_span2">여행 일정을 선택하고 특가를 확인하세요!<br>
+          여행 일정을 특가를 확인하세요!</span>
+      </div>
+      <div class="section02_images">
+        <img class="dom" src="assets/images/dom.png" alt="dom">
+        <img class="fire" src="assets/images/fire.png" alt="fire">
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <img class="swiper-slide" src="assets/images/glam1.png" alt="glam1">
+            <img class="swiper-slide" src="assets/images/glam2.png" alt="glam2">
+            <img class="swiper-slide" src="assets/images/glam3.png" alt="glam3">
+            <img class="swiper-slide" src="assets/images/glam3.png" alt="glam3">
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section03">
+
+  </section>
+
+
+  <section class="section04">
+
+  </section>
+
+  
+  <section class="section05">
+
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
