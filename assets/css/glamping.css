@@ -128,16 +128,21 @@ body{
     opacity: 1;
     cursor: pointer;
 }
+.t2 input{
+    width: 210px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+}
+.t2 input:hover{
+    border: 0.5px solid #3DAD72;
+}
 .sec01_text .t2 img{
     width: 24px;
     height: 24px;
-    margin-right: 41px;
-}
-.sec01_text .t2 p {
-    margin: 0px;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 600;
+    margin-right: 30px;
 }
 
 
@@ -154,16 +159,19 @@ body{
     line-height: 28px;
     font-weight: 600;
 }
+.t3 input{
+    width: 230px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+}
+.t3 input:hover{
+    border: 0.5px solid #3DAD72;
+}
 .sec01_text .t3 img{
     width: 24px;
     height: 24px;
     margin-right: 16px;
-}
-.sec01_text .t3 p {
-    margin: 0px;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 600;
 }
 
 
@@ -180,17 +188,21 @@ body{
     line-height: 28px;
     font-weight: 600;
 }
+.t4 input{
+    width: 120px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+}
+.t4 input:hover{
+    border: 0.5px solid #3DAD72;
+}
 .sec01_text .t4 img{
     width: 24px;
     height: 24px;
-    margin-right: 50px;
+    margin-right: 30px;
 }
-.sec01_text .t4 p {
-    margin: 0px;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 600;
-}
+
 .sec01_text .t2:hover,
 .sec01_text .t3:hover,
 .sec01_text .t4:hover {
@@ -212,9 +224,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
 }
 .sec01_text .t5:hover {
-  background: #3DAD72;
+  background: #3CB977;
   transform: all .5s; 
   cursor: pointer;
 }
