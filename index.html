@@ -25,18 +25,18 @@
         <li class="main__nav__li">테마별</li>
         <li class="main__nav__li">관광지</li>
         <li class="main__nav__li">이벤트</li>
-        <li class="main__nav__img"><img src="https://img.icons8.com/?size=100&id=S5biqohaDgd1&format=png&color=000000" alt=""></li>
       </ul>
     </div>
-    <div class="hamburger active">
+    <!-- <div class="hamburger active">
       <ul class="hamburger_menu">
+        <li class="hamburger__img"><img src="https://img.icons8.com/?size=100&id=S5biqohaDgd1&format=png&color=000000" alt=""></li>
         <li><a href="" class="category">글램핑장 검색</li>
         <li><a href="" class="category">추천</li>
         <li><a href="" class="category">테마별</li>
         <li><a href="" class="category">관광지</li>
         <li><a href="" class="category">이벤트</li>
       </ul>
-    </div>
+    </div> -->
   </header>
 
  <section class="section01">
@@ -44,6 +44,7 @@
       <div class="swiper-wrapper">
         <img class="swiper-slide slide1" src="assets/imges/bg2" alt="">
         <img class="swiper-slide slide1" src="assets/imges/bg3" alt="">
+        <img class="swiper-slide slide1" src="assets/imges/bg4" alt="">
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -80,13 +81,12 @@
 
   <!-- section 02 -->
 
-  <!-- <section class="section02">
+  <section class="section02">
     <div class="container section02_container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <p class="section02_p1">Gallery</p>
-          <p class="section02_p2">여행 일정을 선택하고 특가를 확인하세요!<br>
-            여행 일정을 특가를 확인하세요!</p>
+          <p class="section02_p1">Recommendation</p>
+          <p class="section02_p2">가장 인기 있는 글램핑장 둘러보세요!</p>
         </div>
       </div>
       <div class="row">
@@ -108,11 +108,11 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- section 03 -->
 
-  <!-- <section class="section03">
+  <section class="section03">
     <div class="container section03_container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -124,37 +124,45 @@
       <div class="row">
         <div class="col-md-6">
           <div class="col-md-12">
-            <img class="section03_image1" src="assets/imges/glam7.png" alt="">
-            <p>경기도잣향기푸른숲</p>
-            <p>잣나무 숲길을 따라 산책하며 삼림욕을 즐길 수 있습니다. </p>
+            <img class="section03_image" src="assets/imges/glam7.png" alt="">
+            <div class="text_box1">
+              <p>경기도잣향기푸른숲</p>
+              <p>잣나무 숲길을 따라 산책하며 삼림욕을 즐길 수 있습니다. </p>
+            </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-6">
-              <img class="section03_image2" src="assets/imges/glam8.png" alt="">
-              <p>짚라인</p>
-              <p>누구나 쉽게 도전 가능한 액티비티!
+              <img class="section03_image" src="assets/imges/glam8.png" alt="">
+              <div class="text_box2">
+                <p>짚라인</p>
+                <p>누구나 쉽게 도전 가능한 액티비티!
                 짚라인으로 일상에 활력을 더하세요.</p>
+              </div>
             </div>
             <div class="col-md-6">
-              <img class="section03_image2" src="assets/imges/glam9.png" alt="">
-              <p>레일바이크</p>
-              <p>사진 찍기 딱 좋은 스팟
+              <img class="section03_image" src="assets/imges/glam9.png" alt="">
+              <div class="text_box3">
+                <p>레일바이크</p>
+                <p>사진 찍기 딱 좋은 스팟
                 레일바이크에서 인생샷 찰칵 !!</p>
+              </div>
             </div>
           </div>
-          <div class="col-md-12 section03_image">
-            <img src="assets/imges/glam10.png" alt="">
-            <p>경기도계곡</p>
-            <p>가장 물놀이 하기 좋은 깨끗한 계곡</p>
+          <div class="col-md-12">
+            <img class="section03_image" src="assets/imges/glam10.png" alt="">
+            <div class="text_box4">
+              <p>경기도계곡</p>
+              <p>가장 물놀이 하기 좋은 깨끗한 계곡</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     </div>
-  </section> -->
+  </section>
 
   <!-- section 04 -->
 <!-- 
@@ -272,7 +280,7 @@
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
-        delay: 5000,
+        delay: 3500,
         disableOnInteraction: false,
       },
       navigation: {

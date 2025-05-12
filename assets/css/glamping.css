@@ -56,8 +56,9 @@ body{
     border-bottom: 1px solid #3DAD72;
     cursor: pointer;
 }
-.main__nav__img {
-    display: none;
+.hamburger__img {
+    display: flex;
+    justify-content: flex-end;
 }
 .hamburger {
     /* display: none; */
@@ -304,7 +305,7 @@ body{
     margin-bottom: 30px;
 }
 .section02_p2{
-    font-size: 22px;
+    font-size: 18px;
     line-height: 28px;
     font-weight: 500;
     color: #3DAD72;
@@ -331,7 +332,9 @@ body{
     height: 880px;
     padding-top: 120px;
 }    
-
+.section03_container{
+    position: relative;
+}
 .section03_p1{
     font-size: 34px;
     line-height: 28px;
@@ -347,10 +350,15 @@ body{
     margin-bottom: 100px;
 }
 .section03_image{
-    margin-top: 20px;
+    position: relative;
 }
-
-
+.text_box1{
+    width: 386px;
+    height: 133px;
+    position: absolute;
+    top: 351px;
+    left: 40px;
+}
 /* section 04 */
 
 .section04 {
@@ -464,12 +472,12 @@ body{
     .main__nav__li {
         display: none;
     }
-    .main__nav__img {
-        display: block;
+    .hamburger__img {
+        display: flex;
     }
-    .main__nav__img img {
-        width: 50px;
-        height: 60px;
+    .hamburger__img img {
+        width: 42px;
+        height: 50px;
     }
 }
 @media screen and (max-width: 660px){
