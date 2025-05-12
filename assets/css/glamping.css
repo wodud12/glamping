@@ -80,6 +80,7 @@ body{
 .hamburger_menu li{
     font-size: 20px;
 }
+
 /* section 01 */
 
 .section01{
@@ -109,20 +110,29 @@ body{
 
 .section01_container{
     width: 100%;
-    height: 312px;
     margin-bottom: 43px;
     padding: 0px;
     z-index: 11;
 }
 
 .sec01_title{
+    width: 30%;
     margin-bottom: 50px;
     color: #fff;
+    position: relative;
+    top: -50%;
+    right: -35%;
+    align-items: center;
 }
 .sec01_title h4{
+    width: 360px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #3DAD72;
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 .sec01_title p{
     font-size: 20px;
@@ -177,7 +187,7 @@ body{
     background: #f9f9f9;
 }
 .t2 input:hover{
-    border: 0.5px solid #3DAD72;
+    border: 0.5px solid #f9f9f9;
 }
 .sec01_text .t2 img{
     width: 24px;
@@ -209,7 +219,7 @@ body{
     background: #f9f9f9;
 }
 .t3 input:hover{
-    border: 0.5px solid #3DAD72;
+     border: 0.5px solid #f9f9f9;
 }
 .sec01_text .t3 img{
     width: 24px;
@@ -241,7 +251,7 @@ body{
     background: #f9f9f9;
 }
 .t4 input:hover{
-    border: 0.5px solid #3DAD72;
+     border: 0.5px solid #f9f9f9;
 }
 .sec01_text .t4 img{
     width: 24px;
@@ -305,19 +315,29 @@ body{
     color: #3DAD72;
     margin-bottom: 70px;
 }
-.section02_image{
-    margin-top: 145px;
-}
-.mySwiper{
-    height: 421px;
-    border-radius: 20px;
+.section02_img{
+    position: relative;
 }
 
-/* .swiper-pagination{
-    position: static;
-    margin-top: 100px;
-} */
+.section02_img:hover{
+    margin: 0 auto;
+    filter: blur(2px) brightness(0.5);
+    cursor: pointer;
+}
 
+.section02_img_text{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    
+}
+.section02_img_text:hover{
+    cursor: pointer;
+    
+}
 
 
 /* section 03 */
@@ -348,13 +368,46 @@ body{
     position: relative;
 }
 .text_box1{
-    width: 386px;
-    height: 133px;
     position: absolute;
-    top: 351px;
-    left: 40px;
+    top: 65%;
+    left: 70px;
     color: #fff;
 }
+.text_box1 p{
+    font-size: 20px;
+}
+
+.text_box2{
+    position: relative;
+    top: -30%;
+    right: -5%;
+    color: #fff;
+}
+.text_box2 p{
+    font-size: 16px;
+}
+
+.text_box3{
+    position: relative;
+    top: -30%;
+    right: -5%;
+    color: #fff;
+}
+.text_box3 p{
+    font-size: 16px;
+}
+.text_box4{
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    color: #fff;
+    z-index: 49;
+}
+.text_box4 p{
+    font-size: 20px;
+    z-index: 50;
+}
+
 /* section 04 */
 
 .section04 {
@@ -479,6 +532,11 @@ body{
 @media screen and (max-width: 660px){
     .section01_container{
         width: 80%;
+    }
+    .sec01_title {
+        position: absolute;
+        top: 20%;
+        left: 20%;
     }
 }
 
