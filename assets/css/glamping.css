@@ -106,12 +106,6 @@ body{
     height: 880px;
     object-fit: cover;
 }
-.swiper-button-next {
-    color: #fff;
-}
-.swiper-button-prev{
-    color: #fff;
-}
 
 .section01_container{
     width: 100%;
@@ -318,6 +312,7 @@ body{
     height: 421px;
     border-radius: 20px;
 }
+
 /* .swiper-pagination{
     position: static;
     margin-top: 100px;
@@ -358,6 +353,7 @@ body{
     position: absolute;
     top: 351px;
     left: 40px;
+    color: #fff;
 }
 /* section 04 */
 
