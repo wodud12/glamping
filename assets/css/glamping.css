@@ -84,7 +84,6 @@ body{
 /* section 01 */
 
 .section01{
-
     width: 100%;
     height: 880px;
     display: flex;
@@ -116,14 +115,12 @@ body{
 }
 
 .sec01_title{
-    width: 30%;
     margin-bottom: 200px;
     color: #fff;
     position: relative;
-    top: -50%;
-    right: -35%;
-    text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .sec01_title h4{
     text-align: center;
@@ -292,17 +289,16 @@ body{
 
 .section02{
     width: 100%;
-    height: 1000px;
-    padding-top: 120px;
+    height: 960px;
+    padding-top: 80px;
 }
 .section02_container{
-    width: 1406px;
+    width: 73.3%;
     height: 605px;
-    margin-left: 312px;
     margin-top: 100px;
 }
 .section02_p1{
-    font-size: 34px;
+    font-size: 28px;
     line-height: 28px;
     font-weight: 600;
     color: #3DAD72;
@@ -319,6 +315,7 @@ body{
     position: relative;
 }
 .section02_images img{
+    width: 100%;
     padding: 0; 
 }
 .section02_img img:hover{
@@ -343,15 +340,16 @@ body{
 
 .section03 {
     width: 100%;
-    height: 880px;
-    padding-top: 120px;
+    height: 960px;
+    padding-top: 80px;
 }    
 .section03_container{
     position: relative;
+    margin-top: 100px;
 }
 .section03_p1{
-    font-size: 34px;
-    line-height: 28px;
+    font-size: 28px;
+    line-height: 38px;
     font-weight: 600;
     color: #3DAD72;
     margin-bottom: 20px;
@@ -362,6 +360,10 @@ body{
     font-weight: 500;
     color: #3DAD72;
     margin-bottom: 100px;
+}
+.section03_image{
+    width: 100%;
+    height: 100%;
 }
 .relative_div {
     position: relative;
@@ -473,6 +475,9 @@ body{
 }
 
 @media screen and (max-width: 1399px){
+    .sec01_title {
+        margin-bottom: 100px;
+    }
     .sec01_text {
         display: flex;
         flex-direction: column;
@@ -511,7 +516,22 @@ body{
         align-self: center;
     }
     .section01_container{
-        height: 602px;
+        height: 680.59px;
+    }
+    .text_box1 p {
+        font-size: 18px;
+    }
+    .text_box2 p {
+        font-size: 16px;
+    }
+    .text_box3 p {
+        font-size: 16px;
+    }
+    .text_box4 p {
+        font-size: 18px;
+    }
+    .section02_container{
+        width: 90%;
     }
 }
 
@@ -529,15 +549,103 @@ body{
         width: 42px;
         height: 50px;
     }
+    .section02_container{
+        width: 95%;
+        margin-top: 200px;
+    }
+    .section02_img_text{
+        font-size: 16px;
+    }
+    .text_box1 {
+        left: 30px;
+    }
+    .text_box2 {
+        left: 20px;
+    }
+    .text_box3 {
+        left: 20px;
+    }
+    .text_box4 {
+        left: 30px;
+    }
+
+    .text_box1 p {
+        font-size: 16px;
+    }
+    .text_box2 p {
+        font-size: 14px;
+    }
+    .text_box3 p {
+        font-size: 14px;
+    }
+    .text_box4 p {
+        font-size: 16px;
+    }
 }
-@media screen and (max-width: 660px){
+@media screen and (max-width: 768px){
+    .nav {
+        justify-content: space-between;
+    }
+    .logo{
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+    .sec01_title{
+        margin-bottom: 50px;
+    }
     .section01_container{
         width: 80%;
     }
-    .sec01_title {
-        position: absolute;
-        top: 20%;
-        left: 20%;
+   .section02_container{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .section02_img_text{
+        font-size: 16px;
+    }
+    .section02_p1{
+        margin-bottom: 10px;
+    }
+    .section02_p2{
+        margin-bottom: 40px;
+    }
+    .section03_container {
+        margin-top: 40px;
+        width: 55%;
+    }
+    .section03_p1{
+        margin-bottom: 10px;
+    }
+    .section03_p2{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .text_box1 {
+        left: 20px;
+        bottom: 10px;
+    }
+    .text_box2 {
+        left: 20px;
+    }
+    .text_box3 {
+        left: 20px;
+    }
+    .text_box4 {
+        left: 20px;
+        bottom: 10px;
+    }
+    .text_box1 p {
+        font-size: 14px;
+    }
+    .text_box2 p {
+        font-size: 12px;
+    }
+    .text_box3 p {
+        font-size: 12px;
+    }
+    .text_box4 p {
+        font-size: 14px;
     }
 }
 
