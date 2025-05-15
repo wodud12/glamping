@@ -10,6 +10,13 @@ body{
         font-style: normal;
     }
     @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+    :root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix     for Chrome */
+    }
+    @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+    }
 }
 
 
@@ -28,9 +35,21 @@ body{
     width: 206px;
     height: 40px;
     margin-right: 375px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     padding-left: 0px;
 }
+.logo span{
+    font-size: 40px;
+    line-height: 40px;
+    font-family: Inter Variable;
+    font-weight: 600;
+    letter-spacing: -6px;
+    background: linear-gradient(182deg,rgba(57, 220, 114, 1) 30%, rgba(39, 228, 168, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .main__nav{
     display: flex;
     width: 38%;
@@ -40,11 +59,11 @@ body{
     margin-bottom: 0px;
     padding-left: 0px;
     list-style: none;
-
 }
 
 .main__nav__li{
     font-size: 20px;
+    font-weight: 500;
     list-style: none;
     height: 26px;
     display: flex;
@@ -53,7 +72,7 @@ body{
 }
 .main__nav__li:hover{
     transform: all .5s;
-    border-bottom: 1px solid #3DAD72;
+    color: #3DAD72;
     cursor: pointer;
 }
 .hamburger__img {
@@ -121,11 +140,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
+
 .sec01_title h4{
     text-align: center;
     padding: 10px 20px;
-    background-color: #3DAD72;
+    background-color: #0DCD90;
     font-size: 38px;
     font-weight: 600;
     margin-bottom: 50px;
@@ -266,7 +287,7 @@ body{
     line-height: 28px;
     font-weight: 500;
     color: #fff;
-    background: #35a164;
+    background: #0DCD90;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -278,7 +299,6 @@ body{
   transform: all .5s;
   cursor: pointer;
 }
-
 /* section 02 */
 
 .section02{
@@ -292,14 +312,14 @@ body{
     margin-top: 100px;
 }
 .section02_p1{
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 45px;
+    line-height: 45px;
     font-weight: 600;
     font-family: 'KOTRAHOPE';
     font-weight: normal;
     font-style: normal;
-    margin-bottom: 30px;
-    background: linear-gradient(#39DC72 60%, #27E4A8 100%);
+    margin-bottom: 10px;
+    background: linear-gradient(182deg,rgba(57, 220, 114, 1) 30%, rgba(39, 228, 168, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -308,13 +328,12 @@ body{
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
-    color: #3DAD72;
+    color: #0DCD90;
     margin-bottom: 70px;
 }
 .section02_img{
     position: relative;
 }
-
 .section02_images img{
     width: 100%;
     padding: 0; 
@@ -326,17 +345,18 @@ body{
 }
 .section02_img_text{
     position: absolute;
-    top: 60%;
-    left: 10%;
+    top: 45%;
+    left: 20%;
     font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-weight: 600;
     color: #fff;
-    
 }
 .section02_img_text:hover{
     cursor: pointer;
 }
-
 /* section 03 */
 
 .section03 {
@@ -349,13 +369,13 @@ body{
     margin-top: 50px;
 }
 .section03_p1{
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 45px;
+    line-height: 45px;
     font-weight: 600;
     font-family: 'KOTRAHOPE';
     font-weight: normal;
     font-style: normal;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background: linear-gradient(#39DC72 60%, #27E4A8 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -365,7 +385,7 @@ body{
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
-    color: #3DAD72;
+    color: #0DCD90;
     margin-bottom: 100px;
 }
 .section03_image{
@@ -432,20 +452,24 @@ body{
     margin-top: 100px;
 }
 .section04_p1{
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 45px;
+    line-height: 45px;
     font-weight: 600;
     font-family: 'KOTRAHOPE';
     font-weight: normal;
     font-style: normal;
     color: #3DAD72;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    background: linear-gradient(#39DC72 60%, #27E4A8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .section04_p2{
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
-    color: #3DAD72;
+    color: #0DCD90;
     margin-bottom: 100px;
 }
 
