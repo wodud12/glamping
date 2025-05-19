@@ -1,0 +1,56 @@
+
+.padding-common-120{
+    padding: 120px 0;
+}
+
+.sec02{
+    position: relative;
+}
+.sec02__contianer{
+    position: relative;
+}
+.sec02__img img{
+    width: 100%;
+}
+.sec02__text{
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    top:0;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.sec02__text:hover{
+    opacity: 1;
+}
+
+.sec03 img{
+    width: 100%;
+}
+
+.sec04 img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap:20px;
+}
