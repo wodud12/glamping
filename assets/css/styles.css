@@ -9,10 +9,11 @@ body{
         font-weight: 400;
         font-style: normal;
     }
-    @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
-    :root {
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1; 
+    @font-face {
+        font-family: 'Katuri';
+        src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
     }
     @supports (font-variation-settings: normal) {
     :root { font-family: InterVariable, sans-serif; }
@@ -82,20 +83,162 @@ body{
 
 /* section01 */
 
+.section01{
+    width: 100%;
+    height: 880px;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    margin-top: 80px;
+    position: relative;
+}
 
+.mySwiper1{
+    width: 100%;
+    height: 880px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.slide1{
+    width: 100%;
+    height: 780px;
+    object-fit: cover;
+}
+
+/* section01-2 */
+
+.section01_container{
+    width: 100%;
+    padding: 0px;
+    z-index: 11;
+
+}
+
+.sec01_title{
+    margin-bottom: 100px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.sec01_title h4{
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #0DCD90;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.sec01_text {
+    width: 100%;
+    height: 186px;
+    border-radius: 20px;
+    margin: 0px;
+}
+
+.text_top {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #C8BCBC;
+    display: flex;
+    align-items: flex-end;
+
+}
+.text_top p {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #3DAD72;
+    width: 130px;
+    height: 40.5px;
+    border-bottom: 3px solid #3DAD72;
+    z-index: 50;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.text_bottom{
+    padding: 10px 26px;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 20px;
+    opacity: 1;
+    cursor: pointer;
+}
+.text_bottom input{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    background: #fff;
+}
+.text_bottom input:hover{
+    border: 0.5px solid #3DAD72;
+}
+.text_bottom_user{
+    padding: 10px 26px;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 20px;
+    opacity: 1;
+    cursor: pointer;
+}
+.text_bottom_user input{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    background: #fff;
+}
+.sec01_text img{
+    width: 24px;
+    height: 24px;
+    margin-right: 30px;
+}
+
+.sec01_btn{
+    width: 100% ;
+    height: 60px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+    background: #0DCD90;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+}
+.sec01_btn:hover {
+  background: #3CB977;
+  transform: all .5s;
+  cursor: pointer;
+}
 
 /* section02 */
 
 .sec02{
     position: relative;
 }
-.sec02__contianer{
+.sec02__container{
+    width: 100%;
     position: relative;
 }
 .sec02_top h2{
     font-size: 45px;
     font-weight: 45px;
-    font-family: 'KOTRA HOPE';
+    font-family: 'AndongKaturi';
     font-weight: normal;
     font-style: normal;
     background: linear-gradient(#39DC72 60%, #27E4A8 100%);
@@ -136,9 +279,9 @@ body{
     font-size: 26px;
     line-height: 28px;
     font-weight: 600;
-
 }
 .sec02__text:hover{
+    
     opacity: 0.9;
 }
 
@@ -162,7 +305,7 @@ body{
 .sec03_top h2{
     font-size: 45px;
     font-weight: 45px;
-    font-family: 'KOTRA HOPE';
+    font-family: 'AndongKaturi';
     font-weight: normal;
     font-style: normal;
     background: linear-gradient(#39DC72 60%, #27E4A8 100%);
@@ -186,7 +329,7 @@ body{
 .sec04_top h2{
     font-size: 45px;
     font-weight: 45px;
-    font-family: 'KOTRA HOPE';
+    font-family: 'AndongKaturi';
     font-weight: normal;
     font-style: normal;
     background: linear-gradient(#39DC72 60%, #27E4A8 100%);
@@ -211,7 +354,9 @@ body{
 
 footer{
     width: 100%;
+    height: 256px;
     background: #383838;
+    padding-top: 59px;
 }
 
 a{
@@ -220,13 +365,14 @@ a{
 }
 footer .container h2{
     font-size: 40px;
-    font-family: 'KOTRA HOPE';
+    font-family: 'AndongKaturi';
     line-height: 40px;
     font-weight: 600;
     background: linear-gradient(#39DC72 60%, #27E4A8 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    margin-bottom: 20px;
 }
 footer .container p{
     color: #fff;
