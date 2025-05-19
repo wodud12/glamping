@@ -324,6 +324,11 @@ body{
     -webkit-background-clip: text;
     color: transparent;
 }
+.section02_p1 img{
+    width: 57px;
+    height: 53px;
+
+}
 .section02_p2{
     font-size: 20px;
     line-height: 28px;
@@ -380,6 +385,10 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+.section03_p1 img{
+    width: 57px;
+    height: 53px;
 }
 .section03_p2{
     font-size: 20px;
@@ -445,11 +454,15 @@ body{
     width: 100%;
     height: 780px;
     padding-top: 120px;
+    position: relative;
 }
 .section04_container {
     width: 1296px;
     height: 560px;
     margin-top: 100px;
+}
+.section04_images img{
+    border-radius: 20px;
 }
 .section04_p1{
     font-size: 45px;
@@ -465,6 +478,11 @@ body{
     -webkit-background-clip: text;
     color: transparent;
 }
+.section04_p1 img{
+    width: 57px;
+    height: 53px;
+
+}
 .section04_p2{
     font-size: 20px;
     line-height: 28px;
@@ -473,11 +491,16 @@ body{
     margin-bottom: 100px;
 }
 
-.section04_images p {
+.section04_images .sec04_title1 {
     width: 306px;
-    font-size: 18px;
     line-height: 24px;
     margin-top: 35px;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
 }
 .section04_images span {
     font-size: 16px;
@@ -487,7 +510,7 @@ body{
 }
 .section04_images img:hover{
     margin: 0 auto;
-    filter: opacity(0.5) brightness(0.9);
+    filter: opacity(0.5) brightness(1);
     cursor: pointer;
 }
 .section04_images p:hover{
@@ -501,39 +524,22 @@ body{
     height: 100%;
     position: relative;
 }
-.sec04_title1{
-  position: absolute;
-  bottom: 60%;
-  left: 10%;
-}
-/* .sec04_title2{
-  position: absolute;
-  top: 40px;
-  left: 30px;
-}
-.sec04_title3{
-  position: absolute;
-  top: 40px;
-  left: 50%;
-}
-.sec04_title4{
-  position: absolute;
-  top: 40px;
-  left: 30px;
-} */
+
+
 /* section 05 */
 
 .section05 {
     width: 100%;
+    height: 200px;
     background: #383838;
-    padding: 59px 0;
+    padding: 30px 0;
 }
 .footer {
     height: 138px;
 }
 .footer img {
-    width: 206px;
-    height: 40px;
+    width: 160px;
+    height: 35px;
     margin-bottom: 20px;
 }
 .footer p {
