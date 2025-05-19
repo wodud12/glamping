@@ -1,7 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+    :root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; 
+    }
+    @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+    }
+}
 
 .padding-common-120{
     padding: 120px 0;
 }
+
+
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    align-items: center;
+}
+.logo{
+    width: 206px;
+    height: 40px;
+    margin-right: 375px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+/* .logo span{
+    font-size: 40px;
+    line-height: 40px;
+    font-family: Inter Variable;
+    font-weight: 600;
+    letter-spacing: -6px;
+    background: linear-gradient(182deg,rgba(57, 220, 114, 1) 30%, rgba(39, 228, 168, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} */
+
+.main__nav{
+    display: flex;
+    width: 38%;
+    height: 26px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.main__nav__li{
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__nav__li:hover{
+    transform: all .5s;
+    color: #3DAD72;
+    cursor: pointer;
+}
+
+/* section01 */
+
+
+
+/* section02 */
 
 .sec02{
     position: relative;
@@ -9,8 +92,28 @@
 .sec02__contianer{
     position: relative;
 }
+.sec02_top h2{
+    font-size: 45px;
+    font-weight: 45px;
+    font-family: 'KOTRA HOPE';
+    font-weight: normal;
+    font-style: normal;
+    background: linear-gradient(#39DC72 60%, #27E4A8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+.sec02_top p{
+    font-size: 18px;
+    font-weight: 20px;
+    color: #3DAD72;
+    margin-bottom: 50px;
+}
+
 .sec02__img img{
     width: 100%;
+    border-radius: 20px;
 }
 .sec02__text{
     z-index: 1;
@@ -20,37 +123,119 @@
     border-radius: 15px;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #3DAD72;
     text-align: center;
     color: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.6s;
+}
+.sec02__text h2{
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 600;
+
+}
+.sec02__text:hover{
+    opacity: 0.9;
 }
 
-.sec02__text:hover{
-    opacity: 1;
-}
+/* section03 */
 
 .sec03 img{
     width: 100%;
+    border-radius: 20px;
 }
+.sec03__container{
+    position: relative;
+}
+.sec03__text{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.sec03_top h2{
+    font-size: 45px;
+    font-weight: 45px;
+    font-family: 'KOTRA HOPE';
+    font-weight: normal;
+    font-style: normal;
+    background: linear-gradient(#39DC72 60%, #27E4A8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+.sec03_top p{
+    font-size: 18px;
+    font-weight: 20px;
+    color: #3DAD72;
+    margin-bottom: 50px;
+}
+
+/* section04 */
 
 .sec04 img{
     width: 100%;
+}
+.sec04_top h2{
+    font-size: 45px;
+    font-weight: 45px;
+    font-family: 'KOTRA HOPE';
+    font-weight: normal;
+    font-style: normal;
+    background: linear-gradient(#39DC72 60%, #27E4A8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+.sec04_top p{
+    font-size: 18px;
+    font-weight: 20px;
+    color: #3DAD72;
+    margin-bottom: 50px;
+}
+.sec__review_text{
+    margin-top: 25px;
+    font-size: 16px;
+
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    background: #383838;
 }
 
 a{
     text-decoration: none;
     color: inherit;
 }
-
+footer .container h2{
+    font-size: 40px;
+    font-family: 'KOTRA HOPE';
+    line-height: 40px;
+    font-weight: 600;
+    background: linear-gradient(#39DC72 60%, #27E4A8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+footer .container p{
+    color: #fff;
+}
 footer ul{
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
+    color: #fff;
     gap:20px;
 }
