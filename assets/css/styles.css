@@ -9,14 +9,13 @@ body{
         font-weight: 400;
         font-style: normal;
     }
+
+/* KOTRA HOPE 폰트 등록 */
     @font-face {
-        font-family: 'Katuri';
-        src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+        font-family: 'KOTRA HOPE';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
-    }
-    @supports (font-variation-settings: normal) {
-    :root { font-family: InterVariable, sans-serif; }
     }
 }
 
@@ -81,6 +80,21 @@ body{
     cursor: pointer;
 }
 
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-down {
+  animation: fadeInDown 1s ease-out forwards;
+}
+
 /* section01 */
 
 .section01{
@@ -107,6 +121,8 @@ body{
     object-fit: cover;
 }
 
+
+
 /* section01-2 */
 
 .section01_container{
@@ -125,14 +141,22 @@ body{
     position: relative;
 }
 
-.sec01_title h4{
+.sec01_title h4 {
     text-align: center;
     padding: 10px 20px;
-    background-color: #0DCD90;
-    font-size: 38px;
-    font-weight: 600;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
     margin-bottom: 30px;
     border-radius: 5px;
+    font-family: 'KOTRA HOPE';
+    transition: transform 0.3s ease; /* 이동 애니메이션만 적용 */
+}
+
+/* 호버 시 텍스트 위로 5px 이동 */
+.sec01_title h4:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .sec01_text {
@@ -156,7 +180,7 @@ body{
     line-height: 28px;
     color: #3DAD72;
     width: 130px;
-    height: 40.5px;
+    height: 50.5px;
     border-bottom: 3px solid #3DAD72;
     z-index: 50;
     margin-bottom: 0;
@@ -238,7 +262,7 @@ body{
 .sec02_top h2{
     font-size: 45px;
     font-weight: 45px;
-    font-family: 'AndongKaturi';
+    font-family: 'KOTRA HOPE';
     font-weight: normal;
     font-style: normal;
     background: linear-gradient(#39DC72 60%, #27E4A8 100%);
@@ -296,8 +320,8 @@ body{
 }
 .sec03__text{
     position: absolute;
-    bottom: 40px;
-    left: 20px;
+    bottom: 30px;
+    left: 10px;
     font-size: 20px;
     font-weight: 500;
     color: #fff;
@@ -305,7 +329,7 @@ body{
 .sec03_top h2{
     font-size: 45px;
     font-weight: 45px;
-    font-family: 'AndongKaturi';
+    font-family: 'KOTRA HOPE';
     font-weight: normal;
     font-style: normal;
     background: linear-gradient(#39DC72 60%, #27E4A8 100%);
@@ -325,11 +349,11 @@ body{
 
 .sec04 img{
     width: 100%;
+    margin-bottom: 35px;
 }
-.sec04_top h2{
+.sec04_top h2 {
     font-size: 45px;
-    font-weight: 45px;
-    font-family: 'AndongKaturi';
+    font-family: 'KOTRA HOPE', sans-serif;
     font-weight: normal;
     font-style: normal;
     background: linear-gradient(#39DC72 60%, #27E4A8 100%);
@@ -344,10 +368,12 @@ body{
     color: #3DAD72;
     margin-bottom: 50px;
 }
-.sec__review_text{
+.review__container{
+    width: 309px;
+    height: 398px;
     margin-top: 25px;
     font-size: 16px;
-
+    border: 1px solid #d6d6d6;
 }
 
 /* footer */
@@ -365,7 +391,7 @@ a{
 }
 footer .container h2{
     font-size: 40px;
-    font-family: 'AndongKaturi';
+    font-family: 'KOTRA HOPE';
     line-height: 40px;
     font-weight: 600;
     background: linear-gradient(#39DC72 60%, #27E4A8 100%);
@@ -499,7 +525,7 @@ footer ul{
     .sec02_top h2{
         font-size: 45px;
         font-weight: 45px;
-        font-family: 'AndongKaturi';
+        font-family: 'KOTRA HOPE';
         font-weight: normal;
         font-style: normal;
         background: linear-gradient(#39DC72 60%, #27E4A8 100%);
@@ -542,12 +568,12 @@ footer ul{
         font-weight: 600;
     }
     .sec02__text:hover{
-        
         opacity: 0.9;
     }
 
 
     /* sec03 */
+
     .sec03__text{
         bottom: 0px;
         left: 10px;
@@ -616,10 +642,12 @@ footer ul{
     }
 
     /* sec03 */
-
+    .sec03 img{
+        border-radius: 10px;
+    }
     .sec03__text{
         bottom: 0px;
-        left: 0px;
+        left: 5px;
         font-size: 12px;
         font-weight: 500;
         letter-spacing: 1px;
@@ -686,6 +714,31 @@ footer ul{
         font-weight: 18px;
     }
 
+    /* sec04 */
+
+    .sec__review_text{
+        font-size: 16px;
+        letter-spacing: -1px;
+    }
+    .sec04_top h2{
+        font-size: 36px;
+        font-weight: 36px;
+        margin-bottom: 10px;
+    }
+    .sec04_top p{
+        font-size: 16px;
+        font-weight: 18px;
+    }
+
+    .sec04 img{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .review__container{
+        width: 250px;
+        height: 358px;
+    }
+
     /* footer */
 
     footer{
@@ -702,29 +755,190 @@ footer ul{
 
 @media(max-width:575px){
 
+
+    /* sec01 */
+
+        
+    .section01{
+        height: 680px;
+    }
+
+    .mySwiper1{
+        height: 680px;
+    }
+    .slide1{
+        height: 680px;
+    }
+
+    /* sec01-2 */
+
+    .sec01_title h4{
+        padding: 10px 10px;
+        font-size: 28px;
+    }
+
+    .sec01_text {
+        width: 80%;
+        height: 400px;
+    }
+    .text_top p {
+        font-size: 20px;
+        width: 100px;
+        height: 40.5px;
+    }
+
+    .text_bottom input{
+        width: 70%;
+        height: 40px;
+        font-size: 16px;
+    }
+    .sec01_text img{
+        width: 22px;
+        height: 22px;
+    }
+
+    .sec01_btn{
+        font-size: 22px;
+    }
+    
     /* sec02 */
 
     .sec02__img img{
-        width: 80%;
+        width: 100%;
+        margin: 0 auto;
         border-radius: 20px;
     }
     .sec02__text{
-        z-index: 1;
-        display: flex;
-        position: absolute;
-        top:0;
-        border-radius: 15px;
-        width: 80%;
-        height: 50%;
-        background-color: #3DAD72;
-        text-align: center;
-        color: #fff;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: 0.6s;
+        width: 100%;
+        height: 100%;
     }
+
+    /* sec03 */
+
+    .sec03__text{
+        bottom: 20px;
+        left: 20px;
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+    .sec03_top h2{
+        font-size: 36px;
+        font-weight: 36px;
+        margin-bottom: 10px;
+    }
+    .sec03_top p{
+        font-size: 16px;
+        font-weight: 18px;
+    }
+
+    /* sec04 */
+
+    .sec04 img{
+        width: 100%;
+    }
+    .sec04_top h2{
+        font-size: 45px;
+        font-weight: 45px;
+        font-family: 'AndongKaturi';
+        font-weight: normal;
+        font-style: normal;
+        background: linear-gradient(#39DC72 60%, #27E4A8 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 20px;
+    }
+    .sec04_top p{
+        font-size: 18px;
+        font-weight: 20px;
+        color: #3DAD72;
+        margin-bottom: 50px;
+    }
+    .review__container{
+        width: 309px;
+        height: 398px;
+        margin-top: 25px;
+        font-size: 16px;
+        border: 1px solid #d6d6d6;
+    }
+
+    /* footer */
+
+    footer{
+        height: 180px;
+        padding-top: 28px;
+    }
+    footer .container h2{
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }  
+}
+@media(max-width:390px){
+
+
+    /* sec01 */
+    .section01{
+        height: 480px;
+    }
+
+    .mySwiper1{
+        height: 480px;
+    }
+    .slide1{
+        height: 480px;
+    }
+
+    /* sec01-2 */
+
+    .sec01_title h4{
+        padding: 5px 5px;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .sec01_title{
+        margin-bottom: 10px;
+    }
+    .sec01_text {
+        width: 90%;
+        height: 350px;
+    }
+    .text_top p {
+        font-size: 20px;
+        width: 100px;
+        height: 40.5px;
+    }
+    .text_bottom{
+        padding: 5px 15px;
+    }
+    .text_bottom input{
+        width: 80%;
+    }
+    .text_bottom_user{
+        padding: 5px 15px;
+    }
+    .text_bottom_user input{
+        width: 80%;
+        font-size: 16px;
+    }
+    .sec01_text img{
+        width: 20px;
+        height: 20px;
+        margin: 0 20px;
+    }
+    .sec01_btn{
+        font-size: 20px;
+    }
+    
+    /* sec02 */
+
+    .sec02__container{
+        width: 90%;
+        height: 60%;
+        margin: 0 auto;
+    }
+ 
 
     /* sec03 */
 
