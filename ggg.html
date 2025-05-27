@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바다로캠핑 - PC 예약페이지</title>
+    <style>
+        /* Reset & Base Styles */
+        :root {
+            --primary: #3498db;
+            --secondary: #2c3e50;
+            --light-gray: #f8f9fa;
+            --border: #e0e0e0;
+            --text-light: #7f8c8d;
+            --error: #e74c3c;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 
+                         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+                         sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+        a { text-decoration: none; color: inherit; }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Grid Layout for Desktop */
+        .reservation-grid {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 2rem;
+        }
+
+        /* Left Column - Main Content */
+        .main-content {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 2.5rem;
+        }
+
+        /* Right Column - Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 2rem;
+            height: fit-content;
+        }
+
+        /* Room Header */
+        .room-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .room-title {
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        .room-date {
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+        .room-thumbnail {
+            width: 180px;
+            height: 120px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .room-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Form Styles */
+        .form-section {
+            margin-bottom: 2.5rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+        input, select {
+            width: 100%;
+            padding: 0.9rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+        .input-note {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+            display: block;
+        }
+        .input-error {
+            color: var(--error);
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+            display: block;
+        }
+
+        /* Guest Info */
+        .guest-count {
+            display: flex;
+            gap: 1rem;
+        }
+        .guest-type {
+            flex: 1;
+        }
+
+        /* Price Summary Card */
+        .summary-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dashed var(--border);
+        }
+        .price-row:last-child {
+            border-bottom: none;
+        }
+        .price-total {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+        .price-amount {
+            font-weight: 600;
+        }
+
+        /* Payment Methods */
+        .payment-methods {
+            margin: 1.5rem 0;
+        }
+        .method-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .method-option:hover {
+            border-color: var(--primary);
+            background: rgba(52, 152, 219, 0.05);
+        }
+        .method-option input {
+            width: auto;
+            margin-right: 1rem;
+        }
+
+        /* Terms & Conditions */
+        .terms-box {
+            max-height: 200px;
+            overflow-y: auto;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        .terms-check {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .terms-check input {
+            width: auto;
+            margin-right: 0.8rem;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            background: var(--primary);
+            color: white;
+            width: 100%;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .submit-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(41, 128, 185, 0.2);
+        }
+
+        /* Cancellation Policy Table */
+        .policy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        .policy-table th, 
+        .policy-table td {
+            padding: 0.8rem;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+        .policy-table th {
+            background: var(--light-gray);
+            font-weight: 600;
+        }
+        .policy-table tr:nth-child(even) {
+            background: rgba(248, 249, 250, 0.5);
+        }
+
+        /* Contact Info */
+        .contact-info {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.8rem;
+        }
+        .contact-icon {
+            margin-right: 0.8rem;
+            color: var(--primary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .reservation-grid {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                position: static;
+                margin-top: 2rem;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .room-header {
+                flex-direction: column;
+            }
+            .room-thumbnail {
+                margin-top: 1rem;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-content, 
+            .summary-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reservation">
+        <div class="reservation-grid">
+            <!-- Left Column - Main Form -->
+            <div class="main-content">
+                <div class="room-header">
+                    <div>
+                        <h1 class="room-title">바다로1호</h1>
+                        <div class="room-date">2025-05-29 (1박)</div>
+                    </div>
+                    <div class="room-thumbnail">
+                        <img src="https://via.placeholder.com/300x200" alt="객실 이미지">
+                    </div>
+                </div>
+
+                <!-- 예약자 정보 섹션 -->
+                <div class="form-section">
+                    <h2 class="section-title">예약자 정보</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">이름 *</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">연락처 *</label>
+                            <input type="tel" id="phone" required>
+                            <span class="input-error">정확한 번호를 입력하세요.</span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email">
+                            <span class="input-note">예약 확인서가 발송됩니다</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="birth">생년월일 *</label>
+                            <input type="text" id="birth" placeholder="YYMMDD" required>
+                            <span class="input-note">예) 980121 미성년자는 예약이 불가능합니다.</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="arrival">도착 예정 시간 *</label>
+                        <select id="arrival">
+                            <option value="15:00">15시 00분</option>
+                            <option value="16:00">16시 00분</option>
+                            <option value="17:00">17시 00분</option>
+                        </select>
+                        <span class="input-note">펜션별 입실시간을 꼭 확인해 주세요.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">남기실 말씀</label>
+                        <input type="text" id="message" placeholder="요청사항을 입력해주세요">
+                    </div>
+                </div>
+
+                <!-- 인원 정보 섹션 -->
+                <div class="form-section">
+                    <h2 class="section-title">인원 정보</h2>
+                    <div class="guest-count">
+                        <div class="form-group guest-type">
+                            <label>성인</label>
+                            <input type="number" value="2" min="1">
+                        </div>
+                        <div class="form-group guest-type">
+                            <label>아동</label>
+                            <input type="number" value="0" min="0">
+                        </div>
+                        <div class="form-group guest-type">
+                            <label>유아</label>
+                            <input type="number" value="0" min="0">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 취소 정책 섹션 -->
+                <div class="form-section">
+                    <h2 class="section-title">취소 정책</h2>
+                    <table class="policy-table">
+                        <tr>
+                            <th>기간</th>
+                            <th>당일</th>
+                            <th>1일 전</th>
+                            <th>2일 전</th>
+                            <th>3일 전</th>
+                            <th>4일 전</th>
+                            <th>5일 전</th>
+                        </tr>
+                        <tr>
+                            <td>취소 수수료율</td>
+                            <td>100%</td>
+                            <td>90%</td>
+                            <td>80%</td>
+                            <td>70%</td>
+                            <td>60%</td>
+                            <td>50%</td>
+                        </tr>
+                    </table>
+                    <p class="input-note">올바른 예약 문화 정착을 위하여 예약 취소 시 환불 기준을 위와 같이 운영하고 있습니다.</p>
+                </div>
+            </div>
+
+            <!-- Right Column - Sidebar -->
+            <div class="sidebar">
+                <!-- 요금 요약 카드 -->
+                <div class="summary-card">
+                    <h3 class="section-title">요금 요약</h3>
+                    <div class="price-row">
+                        <span>객실 요금</span>
+                        <span class="price-amount">150,000 원</span>
+                    </div>
+                    <div class="price-row">
+                        <span>추가 인원</span>
+                        <span class="price-amount">0 원</span>
+                    </div>
+                    <div class="price-row">
+                        <span>할인 금액</span>
+                        <span class="price-amount">0 원</span>
+                    </div>
+                    <div class="price-row price-total">
+                        <span>총 결제금액</span>
+                        <span>150,000 원</span>
+                    </div>
+                </div>
+
+                <!-- 결제 수단 선택 -->
+                <div class="summary-card">
+                    <h3 class="section-title">결제 수단</h3>
+                    <div class="payment-methods">
+                        <label class="method-option">
+                            <input type="radio" name="payment" checked>
+                            신용카드
+                        </label>
+                        <label class="method-option">
+                            <input type="radio" name="payment">
+                            무통장입금
+                        </label>
+                    </div>
+
+                    <!-- 약관 동의 -->
+                    <h3 class="section-title">약관 동의</h3>
+                    <div class="terms-box">
+                        <p>취소 시에는 환불 위약금이 있습니다. 예약일 변경 시 발생한 수수료도 취소 수수료와 동일합니다. 코로나 확진으로 취소 시에는 환불 위약금이 있습니다.</p>
+                        <p>펜션 운영 정책에 따라 일부 특가 상품은 취소/변경/환불이 불가능할 수 있습니다. 자세한 내용은 해당 상품 페이지를 확인해주세요.</p>
+                    </div>
+                    <label class="terms-check">
+                        <input type="checkbox" required>
+                        위 약관에 동의합니다 (필수)
+                    </label>
+
+                    <!-- 결제 버튼 -->
+                    <button type="submit" class="submit-btn">150,000 원 결제하기</button>
+                </div>
+
+                <!-- 연락처 정보 -->
+                <div class="summary-card contact-info">
+                    <h3 class="section-title">펜션 정보</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>010-8362-7654</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🏠</span>
+                        <span>인천 강화군 화도면 해안남로 2421-228</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🌐</span>
+                        <a href="http://badarocamping.com">badarocamping.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
