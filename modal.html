@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="assets/css/modal.css">
+</head>
+<body>
+    <div id="modal" class="dialog">
+        <div class="tb">
+            <div class="inner">
+                <div class="top">
+                    <div class="title">
+                        <h2>모달창(POPUP)제목</h2>
+                        <a href="#" class="p_close">닫기</a>
+                    </div>
+                <!-- 제목 끝 -->
+                <div class="ct">
+                    <p>모달 창 내용</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="modalBtn">모달창버튼</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+
+
+        const modalBtn = document.querySelector('.modalBtn');
+        const modal = document.querySelector('#modal');
+        const closeBtn = document.querySelector('.p_close');
+
+        modalBtn.onclick = function(){
+            modal.classList.add('show');
+        }
+        closeBtn.onclick = function(){
+            modal.classList.remove('show');
+        }
+        // document.querySelector('.modalBtn').onclick = 
+        // function(){
+        //     document.getElementById('modal').style.
+        //     display='block';
+        // };
+        // document.querySelector('.p_close').onclick = function(){
+        //     document.getElementById('modal').style.
+        //     display='none';
+        // }
+        
+
+
+        // $(function(){
+        //     $('.p_close').click(function(){
+        //         $('#modal').fadeOut();
+        //     });
+        //     $('.modalBtn').click(function(){
+        //         $('#modal').fadeIn();
+        //     })
+        // })
+    </script>
+</body>
+</html>
