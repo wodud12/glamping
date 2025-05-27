@@ -1,0 +1,300 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+/* KOTRA HOPE 폰트 등록 */
+    @font-face {
+        font-family: 'KOTRA HOPE';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    align-items: center;
+}
+.logo{
+    width: 206px;
+    height: 40px;
+    margin-right: 375px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+/* .logo span{
+    font-size: 40px;
+    line-height: 40px;
+    font-family: Inter Variable;
+    font-weight: 600;
+    letter-spacing: -6px;
+    background: linear-gradient(182deg,rgba(57, 220, 114, 1) 30%, rgba(39, 228, 168, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} */
+
+.main__nav{
+    display: flex;
+    width: 38%;
+    height: 26px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.main__nav__li{
+    font-size: 20px;
+    list-style: none;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__nav__li:hover{
+    transform: all .5s;
+    color: #3DAD72;
+    cursor: pointer;
+}
+
+/* section01 */
+
+.section01{
+    width: 100%;
+    height: 830px;
+    display: flex;
+    flex-direction: center;
+    align-items: flex-end;
+    margin-top: 80px;
+    position: relative;
+}
+
+.section01_main{
+    width: 100%;
+    height: 830px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.section01_main img{
+    width: 100%;
+    height: 830px;
+    object-fit: cover;
+}
+
+
+
+/* section01-2 */
+
+.section01_container{
+    width: 100%;
+    padding: 0px;
+    z-index: 11;
+}
+
+.sec01_title{
+    margin-bottom: 94px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.sec01_title h4 {
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 500;
+    border-radius: 5px;
+    font-family: 'KOTRA HOPE';
+    transition: transform 0.3s ease; /* 이동 애니메이션만 적용 */
+}
+
+/* 호버 시 텍스트 위로 5px 이동 */
+.sec01_title h4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sec01_text {
+    width: 100%;
+    height: 190px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.text_top {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #C8BCBC;
+    display: flex;
+    align-items: flex-end;
+
+}
+.text_top p {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #3DAD72;
+    width: 130px;
+    height: 50.5px;
+    border-bottom: 3px solid #3DAD72;
+    z-index: 50;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.text_bottom{
+    padding: 10px 26px;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 20px;
+    opacity: 1;
+    cursor: pointer;
+}
+.text_bottom input{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    background: #fff;
+}
+.text_bottom input:hover{
+    border: 0.5px solid #3DAD72;
+}
+.text_bottom_user{
+    padding: 10px 26px;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 20px;
+    opacity: 1;
+    cursor: pointer;
+}
+.text_bottom_user input{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    background: #fff;
+}
+.sec01_text img{
+    width: 24px;
+    height: 24px;
+    margin: 0 25px;
+}
+
+.sec01_btn{
+    width: 100% ;
+    height: 60px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+    background: #0DCD90;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+}
+.sec01_btn:hover {
+  background: #3CB977;
+  transform: all .5s;
+  cursor: pointer;
+}
+
+
+/* sec02 */
+
+.section02{
+  width: 100%;
+  position: relative;
+}
+.section02 .container{
+  margin-top: 150px;
+}
+.section02 .container .row{
+  margin-bottom: 60px;
+}
+.sec02_img_box img{
+    width: 417px;
+    height: 253px;
+    border-radius: 10px;
+}
+.sec02_img_box{
+  position: relative;
+}
+.sec02_img_box button{
+  width: 104px;
+  height: 35px;
+  background: #fff;
+  border-radius: 100px;
+  border: 1px solid #FDFDFD;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  color: #0CB47F;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sec02_title{
+  width: 732px;
+  height: 253px;
+}
+.sec02_text01{
+  font-size: 14px;
+  letter-spacing: -1px;
+  line-height: 130%;
+  margin-bottom: 7px;
+}
+.sec02_title h4{
+  font-size: 24px;
+  line-height: 130%;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+}
+.sec02_text02{
+  margin-bottom: 22px;
+}
+.sec02_reserve{
+  width: 100%;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec02_reserve p{
+  margin-bottom: 0px;
+}
+.sec02_reserve img{
+  width: 6px;
+  height: 10px;
+}
