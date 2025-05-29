@@ -177,9 +177,9 @@ function Section01() {
           disableOnInteraction: false,
         }}
       >
-        <SwiperSlide><SlideImg src="assets/images/bg2.png" alt="" /></SwiperSlide>
-        <SwiperSlide><SlideImg src="assets/images/bg3.png" alt="" /></SwiperSlide>
-        <SwiperSlide><SlideImg src="assets/images/bg.png" alt="" /></SwiperSlide>
+        <SwiperSlide><SlideImg src="assets/images/bg2.png" alt="bg2" /></SwiperSlide>
+        <SwiperSlide><SlideImg src="assets/images/bg3.png" alt="bg3" /></SwiperSlide>
+        <SwiperSlide><SlideImg src="assets/images/bg.png" alt="bg" /></SwiperSlide>
       </SwiperDiv>
       <Sec01ContainerDiv className="container">
         <div className="row">
