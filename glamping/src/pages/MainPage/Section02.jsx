@@ -1,12 +1,14 @@
+import styled from "styled-components";
+
 
 
 function Section02() {
 
   return (
     <div>
-      Section02
+      
     </div>
-  );
-};
+  )
 
+}
 export default Section02;

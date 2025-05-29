@@ -16,7 +16,6 @@ const fadeInDown = keyframes`
     transform: translateY(0);
   }
 `;
-
 const ContainerDiv = styled.div`
   width: 100%;
   height: 830px;
