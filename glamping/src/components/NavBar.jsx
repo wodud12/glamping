@@ -13,17 +13,15 @@ const NavBarDiv = styled.div`
 `;
 const LogoDiv = styled.div`
   width: 206px;
-  height: 40px;
   margin-right: 375px;
-  margin-bottom: 10px;
   padding-left: 0px;
 `;
 const GlampingSpan = styled.span`
   font-size: 40px;
-  line-height: 40px;
+  line-height: 50px;
   font-family: Inter Variable;
-  font-weight: 600;
-  letter-spacing: -6px;
+  font-weight: 800;
+  letter-spacing: -2PX;
   background: linear-gradient(182deg,rgba(57, 220, 114, 1) 30%, rgba(39, 228, 168, 1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -58,7 +56,7 @@ function NavBar () {
   return (
     <NavBarDiv>
       <LogoDiv>
-        <span>glamping</span>
+        <GlampingSpan>glamping</GlampingSpan>
       </LogoDiv>
       <MainNavUl>
         <MainNavLi>글램핑장 검색</MainNavLi>

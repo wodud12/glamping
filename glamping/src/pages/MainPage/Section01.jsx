@@ -22,6 +22,10 @@ const ContainerDiv = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+
+  @media(max-width:1399px) {
+    height: 780px;
+  }
 `;
 const SwiperDiv = styled(Swiper)`
   width: 100%;
@@ -30,11 +34,19 @@ const SwiperDiv = styled(Swiper)`
   top: 0;
   left: 0;
   z-index: 10;
+
+  @media(max-width:1399px) {
+    height: 780px;
+  }
 `;
 const SlideImg = styled.img`
   width: 100%;
   height: 830px;
   object-fit: cover;
+
+  @media(max-width:1399px) {
+    height: 780px;
+  }
 `;
 const Sec01ContainerDiv = styled.div`
   width: 100%;
@@ -49,6 +61,10 @@ const Sec01TitleDiv = styled.div`
   align-items: center;
   position: relative;
 
+  @media(max-width:1199px) {
+    margin-bottom: 50px;
+  }
+  
   & > h4 {
     text-align: center;
     padding: 10px 20px;
@@ -65,10 +81,16 @@ const Sec01TitleDiv = styled.div`
       transform: translateY(-5px); 
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     }
+
+    @media(max-width:1399px) {
+      padding: 10px 10px;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
   }
 
   & > p {
-    animation: ${fadeInDown} 1s ease-out forwards;
+    animation: ${fadeInDown} 1s ease-out forwards;\
   }
 `;
 const Sec01TextDiv = styled.div`
@@ -77,10 +99,23 @@ const Sec01TextDiv = styled.div`
   border-radius: 20px;
   margin: 0 auto;
 
+  @media(max-width:1399px) {
+    width: 100%;
+    height: 210px;
+  }
+  @media(max-width:1199px) {
+    width: 80%;
+    height: 380px;
+  }
+
   & img {
     width: 24px;
     height: 24px;
     margin: 0 25px;
+    
+    @media(max-width:1399px) {
+      margin: 0 10px 0 0;
+    }
   }
 `;
 const TextTopDiv = styled.div`
@@ -125,6 +160,14 @@ const TextBottomDiv = styled.div`
     &:hover {
       border: 0.5px solid #3DAD72;
     }
+
+    @media(max-width:1399px) {
+      width: 90%;
+    }
+    
+    @media(max-width:1199px) {
+      width: 100%;
+    }
   }
 `;
 const TextBottomUserDiv = styled.div`
@@ -144,6 +187,14 @@ const TextBottomUserDiv = styled.div`
     border: none;
     font-size: 18px;
     background: #fff;
+
+    @media(max-width:1399px) {
+      width: 90%;
+    }
+    
+    @media(max-width:1199px) {
+      width: 100%;
+    }
   }
 `;
 const Sec01Button = styled.button`
@@ -188,7 +239,7 @@ function Section01() {
             <p>여행 일정을 선택하고 특가를 확인하세요!</p>
           </Sec01TitleDiv>
         </div>
-        <Sec01TextDiv className="row bg-white gy-3">
+        <Sec01TextDiv className="row bg-white gy-xl-3 gy-2 ">
           <div className="col-xl-12 col-sm-12">
             <TextTopDiv>
               <p>국내숙소</p>
