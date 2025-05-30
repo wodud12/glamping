@@ -1,6 +1,7 @@
 
 
-function SearchPage() {
+
+function Subpage1(){
   return (
     <div>
       Search Page
@@ -8,4 +9,4 @@ function SearchPage() {
   );
 };
 
-export default SearchPage;
+export default Subpage1;
