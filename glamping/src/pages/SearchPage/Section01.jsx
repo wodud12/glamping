@@ -1,22 +1,6 @@
-import styled, { keyframes } from "styled-components";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import { useNavigate } from 'react-router-dom';
+import styled  from "styled-components";
 
-import 'swiper/css'; // 필수 CSS
-import 'swiper/css/autoplay'; // 모듈별 CSS (선택사항)
 
-// fade In Down 애니메이션 선언언
-const fadeInDown = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
 const ContainerDiv = styled.div`
   width: 100%;
   height: 830px;
@@ -28,7 +12,7 @@ const ContainerDiv = styled.div`
     height: 780px;
   }
 `;
-const SwiperDiv = styled(Swiper)`
+const Sec01Img = styled.div`
   width: 100%;
   height: 830px;
   position: absolute;
@@ -39,14 +23,15 @@ const SwiperDiv = styled(Swiper)`
   @media(max-width:1399px) {
     height: 780px;
   }
-`;
-const SlideImg = styled.img`
-  width: 100%;
-  height: 830px;
-  object-fit: cover;
 
-  @media(max-width:1399px) {
-    height: 780px;
+  & > img {
+    width: 100%;
+    height: 830px;
+    object-fit: cover;
+
+    @media(max-width:1399px) {
+     height: 780px;
+    }
   }
 `;
 const Sec01ContainerDiv = styled.div`
@@ -70,28 +55,18 @@ const Sec01TitleDiv = styled.div`
     text-align: center;
     padding: 10px 20px;
     color: #fff;
-    font-size: 50px;
+    font-size: 80px;
     font-weight: 500;
     margin-bottom: 30px;
     border-radius: 5px;
     font-family: 'KOTRA HOPE';
-    transition: transform 0.3s ease; /* 이동 애니메이션만 적용 */
-    animation: ${fadeInDown} 1s ease-out forwards;
 
-    &:hover {
-      transform: translateY(-5px); 
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    }
 
     @media(max-width:1399px) {
       padding: 10px 10px;
-      font-size: 28px;
+      font-size: 38px;
       margin-bottom: 20px;
     }
-  }
-
-  & > p {
-    animation: ${fadeInDown} 1s ease-out forwards;\
   }
 `;
 const Sec01TextDiv = styled.div`
@@ -218,28 +193,13 @@ const Sec01Button = styled.button`
 `;
 
 function Section01() {
-  const navigate = useNavigate();
-
   return (
     <ContainerDiv>
-      <SwiperDiv
-        modules={[Autoplay]} 
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 3500,
-          disableOnInteraction: false,
-        }}
-      >
-        <SwiperSlide><SlideImg src="assets/images/bg2.png" alt="bg2" /></SwiperSlide>
-        <SwiperSlide><SlideImg src="assets/images/bg3.png" alt="bg3" /></SwiperSlide>
-        <SwiperSlide><SlideImg src="assets/images/bg.png" alt="bg" /></SwiperSlide>
-      </SwiperDiv>
+      <Sec01Img><img src="assets/images/Search_bg.png" alt="Search_bg" /></Sec01Img>
       <Sec01ContainerDiv className="container">
         <div className="row">
           <Sec01TitleDiv className="col-md-12">
-            <h4>인천 인기 글램핑 찾기</h4>
-            <p>여행 일정을 선택하고 특가를 확인하세요!</p>
+            <h4>BADARO GLAMPING</h4>
           </Sec01TitleDiv>
         </div>
         <Sec01TextDiv className="row bg-white gy-xl-3 gy-2 ">
@@ -267,7 +227,7 @@ function Section01() {
             </TextBottomUserDiv>
           </div>
           <div className="col-xl-2 col-sm-12">
-            <Sec01Button type="button" onClick={() => navigate("/search")}>
+            <Sec01Button type="button" onClick="">
               검색
             </Sec01Button>
           </div>

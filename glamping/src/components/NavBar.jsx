@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const NavBarDiv = styled.div`
   width: 100%;
@@ -53,10 +54,12 @@ const MainNavLi = styled.li`
 `;
 
 function NavBar () {
+  const navigate = useNavigate();
+
   return (
     <NavBarDiv>
       <LogoDiv>
-        <GlampingSpan>glamping</GlampingSpan>
+        <GlampingSpan onClick={() => navigate("/")}>glamping</GlampingSpan>
       </LogoDiv>
       <MainNavUl>
         <MainNavLi>글램핑장 검색</MainNavLi>

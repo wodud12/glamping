@@ -14,14 +14,14 @@ const AppDiv = styled.div`
 function App() {
   return (
     <AppDiv>
-      <NavBar />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/search" element={<SearchPage />} />
-        </Routes>
+        <NavBar />
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/search" element={<SearchPage />} />
+          </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </AppDiv>
   );
 }
