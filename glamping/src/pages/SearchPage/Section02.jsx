@@ -136,165 +136,140 @@ function Section02(){
       checkIn: "14:00",
       checkOut: "11:00"
     },
+    
     {
-      imgUrl: "assets/images/search1.png",
-      location: "인천광역시 강화군2",
-      name: "바다로캠핑",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "150,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search2.png",
-      location: "인천광역시 남동구",
-      name: "에제르 파크",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "30,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search3.png",
+      imgUrl: "assets/images/search7.png",
       location: "인천광역시 옹진군",
-      name: "퀸스비치 글램핑 펜션",
+      name: "글램하이 글램핑",
       option: "글램핑+침대+전실+개별바비큐",
-      price: "221,000",
+      price: "189,000원",
       checkIn: "14:00",
       checkOut: "11:00"
     },
     {
-      imgUrl: "assets/images/search4.png",
-      location: "인천광역시 강화군",
-      name: "하늘바다 글램핑",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "100,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search5.png",
-      location: "인천광역시 강화군",
-      name: "어반티지 글램핑 펜션",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "130,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search6.png",
-      location: "인천광역시 강화군",
-      name: "강화캠핑파크",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "160,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search1.png",
-      location: "인천광역시 강화군3",
-      name: "바다로캠핑",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "150,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search2.png",
-      location: "인천광역시 남동구",
-      name: "에제르 파크",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "30,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search3.png",
+      imgUrl: "assets/images/search8.png",
       location: "인천광역시 옹진군",
-      name: "퀸스비치 글램핑 펜션",
+      name: "블랙트리캠핑장",
       option: "글램핑+침대+전실+개별바비큐",
-      price: "221,000",
+      price: "210,000원",
       checkIn: "14:00",
       checkOut: "11:00"
     },
     {
-      imgUrl: "assets/images/search4.png",
-      location: "인천광역시 강화군",
-      name: "하늘바다 글램핑",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "100,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search5.png",
-      location: "인천광역시 강화군",
-      name: "어반티지 글램핑 펜션",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "130,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search6.png",
-      location: "인천광역시 강화군",
-      name: "강화캠핑파크",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "160,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search1.png",
-      location: "인천광역시 강화군4",
-      name: "바다로캠핑",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "150,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search2.png",
-      location: "인천광역시 남동구",
-      name: "에제르 파크",
-      option: "글램핑+침대+전실+개별바비큐",
-      price: "30,000",
-      checkIn: "14:00",
-      checkOut: "11:00"
-    },
-    {
-      imgUrl: "assets/images/search3.png",
+      imgUrl: "assets/images/search9.png",
       location: "인천광역시 옹진군",
-      name: "퀸스비치 글램핑 펜션",
+      name: "선재담 글램핑&카라반",
       option: "글램핑+침대+전실+개별바비큐",
-      price: "221,000",
+      price: "230,000원",
       checkIn: "14:00",
       checkOut: "11:00"
     },
     {
-      imgUrl: "assets/images/search4.png",
+      imgUrl: "assets/images/search10.png",
       location: "인천광역시 강화군",
-      name: "하늘바다 글램핑",
+      name: "노을빛바다애글램핑",
       option: "글램핑+침대+전실+개별바비큐",
-      price: "100,000",
+      price: "150,000원",
       checkIn: "14:00",
       checkOut: "11:00"
     },
     {
-      imgUrl: "assets/images/search5.png",
+      imgUrl: "assets/images/search11.png",
       location: "인천광역시 강화군",
-      name: "어반티지 글램핑 펜션",
+      name: "오크힐 글램핑",
       option: "글램핑+침대+전실+개별바비큐",
-      price: "130,000",
+      price: "150,000원",
       checkIn: "14:00",
       checkOut: "11:00"
     },
     {
-      imgUrl: "assets/images/search6.png",
+      imgUrl: "assets/images/search12.png",
       location: "인천광역시 강화군",
-      name: "강화캠핑파크",
+      name: "해이든 지앤에스",
       option: "글램핑+침대+전실+개별바비큐",
-      price: "160,000",
+      price: "149,000원",
+      checkIn: "14:00",
+      checkOut: "11:00"
+    },
+
+    {
+      imgUrl: "assets/images/search13.png",
+      location: "인천광역시 중구",
+      name: "왕산오토캠핑장",
+      option: "글램핑+침대+전실+개별바비큐",
+      price: "105,000원",
+      checkIn: "14:00",
+      checkOut: "11:00"
+    },
+    {
+      imgUrl: "assets/images/search14.png",
+      location: "인천광역시 중구",
+      name: "섬뜰아래 캠핑장",
+      option: "글램핑+침대+전실+개별바비큐",
+      price: "150,000원",
+      checkIn: "14:00",
+      checkOut: "11:00"
+    },
+    {
+      imgUrl: "assets/images/search15.png",
+      location: "인천광역시 옹진군",
+      name: "메리글램핑",
+      option: "글램핑+침대+전실+개별바비큐",
+      price: "189,000원",
+      checkIn: "14:00",
+      checkOut: "11:00"
+    },
+    {
+      imgUrl: "assets/images/search16.png",
+      location: "인천광역시 강화군",
+      name: "헬로카라반",
+      option: "글램핑+침대+전실+개별바비큐",
+      price: "110,000원",
+      checkIn: "14:00",
+      checkOut: "11:00"
+    },
+    {
+      imgUrl: "assets/images/search17.png",
+      location: "인천광역시 강화군",
+      name: "씨사이드힐캠핑장",
+      option: "글램핑+침대+전실+개별바비큐",
+      price: "120,000원",
+      checkIn: "14:00",
+      checkOut: "11:00"
+    },
+    {
+      imgUrl: "assets/images/search18.png",
+      location: "인천광역시 옹진군",
+      name: "십리포힐링카라반",
+      option: "글램핑+침대+전실+개별바비큐",
+      price: "149,000원",
+      checkIn: "14:00",
+      checkOut: "11:00"
+    },
+    {
+      imgUrl: "assets/images/search19.png",
+      location: "인천광역시 옹진군",
+      name: "글램독 애견펜션",
+      option: "글램핑+침대+전실+개별바비큐",
+      price: "99,000원 ",
+      checkIn: "14:00",
+      checkOut: "11:00"
+    },
+    {
+      imgUrl: "assets/images/search20.png",
+      location: "인천광역시 서구",
+      name: "청라 해변공원 캠핑장",
+      option: "글램핑+침대+전실+개별바비큐",
+      price: "40,000원",
+      checkIn: "14:00",
+      checkOut: "11:00"
+    },
+    {
+      imgUrl: "assets/images/search21.png",
+      location: "인천광역시 강화군",
+      name: "글램조이",
+      option: "글램핑+침대+전실+개별바비큐",
+      price: "250,000원",
       checkIn: "14:00",
       checkOut: "11:00"
     }
