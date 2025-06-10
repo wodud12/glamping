@@ -1,0 +1,213 @@
+    <div class="container section01_container">
+      <div class="sec01_title col-md-12">
+        <h4 class="wow fadeInDown">인천 인기 글램핑 찾기</h4>
+        <p>여행 일정을 선택하고 특가를 확인하세요!</p>
+      </div>
+      <div class="row bg-white sec01_text">
+        <div class="col-md-12 t1">
+          <div>
+            국내숙소
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 t2">
+          <img src="assets/imges/search.png" alt="검색아이콘">
+          <input type="choose" placeholder="인천광역시">
+        </div>
+        <div class="col-md-4 col-sm-12 t3">
+          <img src="assets/imges/cal.png" alt="달력아이콘">
+          <input type="date" placeholder="04월29일 - 04월30일 (1박)">
+        </div>
+        <div class="col-md-3 col-sm-12 t4">
+          <img src="assets/imges/user.png" alt="사람아이콘">
+          <input type="number" width="50px" placeholder="인원 : 1">
+        </div>
+        <button type="button" onClick="location.href='PAGENAME.html'" class="col-md-3  t5">
+          검색
+        </button>
+      </div>
+    </div>
+
+///
+  <section class="section02">
+    <div class="container section02_container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p class="section02_p1">
+            <img src="assets/imges/g-icon.png" alt="g-icon">추천 글램핑 장</p>
+          <p class="section02_p2">가장 인기 있는 글램핑장 둘러보세요!</p>
+        </div>
+        <div class="col-sm-12 d-flex section02_images">
+          <div class="row g-3">
+            <div class="col-md-3 col-sm-6 section02_img">
+              <img src="assets/imges/glam1.png" alt="">
+              <div class="section02_img_text">
+                <p>캠핑 · 글램핑</p>
+                <p>강화 아로니움</p>
+              </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6 section02_img">
+              <img src="assets/imges/glam2.png" alt="">
+              <div class="section02_img_text">
+                <p>캠핑 · 글램핑</p>
+                <p>홍천 휴토피아 글램핑</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 section02_img">
+              <img src="assets/imges/glam3.png" alt="">
+              <div class="section02_img_text">
+                <p>캠핑 · 글램핑</p>
+                <p>청포대썬셋카라반</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 section02_img">
+              <img src="assets/imges/glam4.png" alt="">
+              <div class="section02_img_text">
+                <p>캠핑 · 글램핑</p>
+                <p>여수 루미너스글램핑</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section 03 -->
+
+  <section class="section03">
+    <div class="container section03_container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p class="section03_p1"><img src="assets/imges/g-icon.png" alt="g-icon">Tourist </p>
+          <p class="section03_p2">원하시는 관광지 둘러보세요</p>
+        </div>
+      </div>
+
+      <div class="row gy-3">
+        <div class="col-md-6 col-sm-12 relative_div">
+          <img class="section03_image" src="assets/imges/glam7.png" alt="">
+          <div class="text_box1">
+            <p>석모도 미네랄</p>
+            <p>서해바다를 바라보며 지평선으로 넘어가는 석양을 감상하며<br> 온천을 즐길 수
+              있는 곳</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-sm-12">
+          <div class="row gy-3">
+            <div class="col-sm-6 relative_div">
+              <img class="section03_image" src="assets/imges/glam8.png" alt="">
+              <div class="text_box2">
+                <p>알파카 월드</p>
+                <p>알파카와 사슴을 만날 수 있고 <br>조류 사육장과 푸드코트가 있는 <br>넓고 푸르른 공원입니다.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 relative_div">
+              <img class="section03_image" src="assets/imges/glam9.png" alt="">
+              <div class="text_box3">
+                <p>여수 해상케이블카</p>
+                <p>아시아에서는 홍콩, 싱가폴, 베트남에<br>이어 네번째로 바다위를 <br>통과하는 해상케이블카</p>
+              </div>
+            </div>
+            <div class="col-sm-12 relative_div">
+              <img class="section03_image" src="assets/imges/glam10.png" alt="">
+              <div class="text_box4">
+                <p>평창 육백마지기</p>
+                <p>한국의 알프스,평창 육백마지기<br>
+                자동차로 쉽게 오를 수 있는 산 정상이자 자연 친화적 관광명소</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- section 04 -->
+
+  <section class="section04">
+    <div class="container section04_container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="section04_p1"><img src="assets/imges/g-icon.png" alt="g-icon">By theme</p>
+          <p class="section04_p2">여행 일정을 확인하고 특가를 선택하세요!</p>
+        </div>
+      </div>
+      <div class="d-flex section04_images ">
+        <div class="row gx-3 ">
+          <div class="col-md-3">
+            <img src="assets/imges/glam11.png" alt="">
+            <p class="sec04_title1">
+              애견동반 ,크란에 꼭 체크해주시고,<br>
+              주의사항 꼭! 읽어주세요. <br>
+              궁금하 신 부분 있으시면 하단에 있는<br>
+              연락처로 연락해주세요.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img src="assets/imges/glam12.png" alt="">
+            <div  class="sec04_title2">
+              <p>
+                매점 있어요!<br>
+                스낵,라면,음료,주류 등 있답니다.<br>
+                궁금 하 신 부분 있으시면 하단의<br>
+                연락처로 연락해주세요.
+              </p>
+              <span>
+                ( 오픈시간 10:00 ~ 22:00 )
+              </span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="assets/imges/glam13.png" alt="">
+            <div class="sec04_title3">
+              <p>
+              바베큐장 리모델링 완료!!<br>
+              바베큐장이 새롭게 리모델링됐습니다.<br>
+              더욱 쾌적하고 감각적인 공간에서 <br>
+              특별한 바베큐 타임을 즐겨보세요.
+            </p>
+            <span>
+              (바베큐장 20:00 까지 이용 가능합니다.)
+            </span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="assets/imges/glam14.png" alt="">
+            <p class="sec04_title4">
+              전기 충전소가 설치 되었습니다.<br>
+              테슬라는 변환잭이 필요하며<br>
+              그밖에 국내외 전기자동차는<br>
+              모두 충전 가능합니다.<br>
+              많이 이용하세요~
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section 05 -->
+
+  <footer class="section05">
+    <div class="container">
+      <div class="footer">
+        <img src="assets/imges/footer.png" alt="">
+        <div class="d-flex">
+          <p>사업자등록번호 : 123-45-67890 </p>
+          <p>대표번호 : 070-1478-9632</p>
+          <p>본사 : 인천광역시 남동구 인주대로 593 , 12층 (구월동)</p>
+        </div>
+        <div class="d-flex">
+          <p>이용약관</p>
+          <p>법적고지</p>
+          <p>개인정보이용처리방침</p>
+          <p>고객센터 1661-8514</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
